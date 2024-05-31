@@ -1,0 +1,303 @@
+:root{
+    --font-padrão:Arial, Helvetica, sans-serif;
+    --amarelo-:#FFD900;
+    --branco-:white;
+    --roxo-:#514988;
+    --rosa-:#E33881;
+    --font-size-Big: 70px;
+    --font-size-medium: 30px;
+    --font-size-big-medium:43px;
+    --font-size-small: 27px;
+
+}
+
+*{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: var(--amarelo-);
+    width: 100%;
+    height: 120px;
+    margin: 0;
+}
+/* ccxp 2 1 */
+#logo{
+position: absolute;
+width: 202px;
+height: 63px;
+left: 58px;
+top: 27px;
+}
+section{
+    display: flex;
+    grid-auto-flow: column;
+    columns: auto;
+    height: 634px;
+    
+}
+#textinfor{
+    background-color: var(--roxo-);
+    font-family: var(--font-padrão);
+    text-align: center;
+}
+
+#textinfor h1{
+    color: var(--amarelo-);
+    font-size: var(--font-size-Big);
+    margin-top: 25px;
+}
+#textinfor h2{
+    color: var(--branco-);
+    font-size: var(--font-size-medium);
+    margin-top: 30px;
+}
+#textinfor p{
+    color: var(--branco-);
+    font-size: var(--font-size-small);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+div#sessão{
+    text-align:justify;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 25px ;
+    margin-left: 13px;   
+}
+div#countdown{
+    display: flex;
+    justify-content: space-around ;
+    font-family: var(--font-padrão);
+    font-size: var(--font-size-Big);
+    color: var(--roxo-);
+    padding-top: 15px;
+    margin-left: 15px;
+}
+#aviso{
+    font-family: var(--font-padrão);
+    font-size: var(--font-size-small);
+    color: var(--rosa-);
+    margin-left: 15px;
+}
+#video{
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-right: 20px;
+}
+
+footer{
+    height: 270px;
+    background-color: var(--branco-);
+    padding: 25px 35px 25px 35px;
+    display: flex;
+    grid-auto-flow: column;
+    columns: auto;
+}
+
+#Ingressos h1{
+    font-size: var(--font-size-small);
+    font-family: var(--font-padrão);
+    color: var(--amarelo-);
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.ingr{
+    
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.ingr img{
+    width: 174px;
+    height: 174px;
+    margin: 0;
+}
+#reserva{
+    padding-top: 75px;
+    display: flex;
+    justify-content: space-around;
+}
+footer button{
+    width: 526px;
+    height: 138px;
+    border-radius: 22px;
+    background-color: var(--roxo-);
+    text-transform: uppercase;
+    color: var(--branco-);
+    font-size: var(--font-size-big-medium);
+    font-family: var(--font-padrão);
+    font-weight: bold;
+}
+button:hover{
+    animation-name: animação;
+    animation-duration: 0.5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: #8257E5;
+    cursor: pointer;
+    color: #FFF;
+    transition: 1s;
+}
+
+@keyframes animação{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+@media only screen and (max-width: 600px){
+    :root{--font-padrão:Arial, Helvetica, sans-serif;
+        --amarelo-:#eb7303;
+        --branco-:white;
+        --roxo-:#c42eff;
+        --rosa-:#00f0d0;
+        --font-size-Big: 30px;
+        --font-size-medium: 16px;
+        --font-size-big-medium:24px;
+        --font-size-small: 14px;
+
+    }
+    
+    *{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        align-items: center;
+        background-color: var(--amarelo-);
+        width: 100%;
+        height: 90px;
+        margin: 0;
+        padding: 0;
+    }
+    #logo{  
+            align-items: center;
+            width: 102px;
+            height: 43px;
+            padding: 0px 18%;
+         
+    }
+    section{
+       display: flex;
+       flex-direction: column;
+       margin: 0px;
+       padding: 0px;
+       width: 100%;
+       height: 1100px;
+
+    }
+    #textinfor{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    }
+    #textinfor h1 h2 p{
+        text-align: center;
+    }
+    #sessão{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: 1200px;
+    }
+    #countdown{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #subtitulo{
+        text-align: center;
+        margin-bottom: 15px;
+    } 
+    #video{
+        margin: 0 0 10px 0;
+        width: 100%;
+        padding: 0 5px 0 5px;
+    }
+   footer{
+    padding: 0;
+    margin: 0px;
+    width: auto;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+   }
+   #Ingressos{
+    display:flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding: 0px;
+   }
+   #Ingressos h1{
+    font-size: var(--font-size-big-medium);
+    text-align: center;
+    margin: 0px;
+    padding: 0px 5px;
+    
+   }
+   .ingr{
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin:50px 0px;
+    padding: 0;
+    }
+    .ingr img{
+        margin-top: 20px;
+        width: 250px;
+        height: 294px;
+        margin: 0;
+        }
+   #reserva{
+    margin: 0;
+    width: 100%;
+    height: 800px;
+   }
+   #reserva button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 306px;
+    height: 128px;
+    border-radius: 18px;
+    background-color: var(--roxo-);
+    text-transform: uppercase;
+    color: var(--branco-);
+    font-size: var(--font-size-big-medium);
+    font-family: var(--font-padrão);
+    font-weight: bold;
+    animation-name: animação;
+    animation-duration: 0.5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: #5714f5;
+    cursor: pointer;
+    color: #FFF;
+    transition: 1s;
+   }
+   @keyframes animação{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+}
+
